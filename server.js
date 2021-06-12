@@ -1,3 +1,10 @@
-console.log('hello world');
+const express=require('express');
+const app=express()
 
-console.log('my word');
+app.listen(3000,()=>{
+    console.log('server is running')
+})
+
+app.get('/',(req,res)=>{
+    res.send('app is running')
+})
