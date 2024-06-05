@@ -2,6 +2,7 @@ const express = require('express');
 const logger = require('./logger'); // Import the logger middleware
 
 const app = express();
+const dotenv = require('dotenv');
 
 app.use(express.json());
 dotenv.config();
